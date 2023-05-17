@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_signup.SignUpPage"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/baseline_person_outline_24"
+        android:hint="Username"
+        android:onClick="usernameEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <EditText
+        android:id="@+id/conpas"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/baseline_lock_24"
+        android:hint="Confirm password"
+        android:onClick="conpasEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#194C91"
+
+
+        android:onClick="signUpButtonClicked"
+
+        android:text="SIGN UP"
+        android:textColor="#F9F9F9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/redRect"
+        android:layout_width="443dp"
+        android:layout_height="90dp"
+        android:background="#D12C2B"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bilkeatslogo" />
+
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/baseline_lock_24"
+        android:hint="Password"
+        android:onClick="passwordEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:hint="E-mail address"
+        android:onClick="usernameEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:onClick="haveAccountClicked"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913">
+
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

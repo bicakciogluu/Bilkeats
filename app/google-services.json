@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958156874109",
+    "project_id": "bilkeats-647f4",
+    "storage_bucket": "bilkeats-647f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958156874109:android:3af1bd5c81a2e3ef9bec14",
+        "android_client_info": {
+          "package_name": "com.omerbicakcioglu.bilkeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958156874109-lfs2mdh330ii6fdo89m3orkria5r8i4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw-xBdAn5gzaZgm111A0PVXCJflYUwBFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958156874109-lfs2mdh330ii6fdo89m3orkria5r8i4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
