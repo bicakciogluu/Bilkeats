@@ -14,6 +14,9 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.omerbicakcioglu.bilkeats.databinding.ActivitySignUpPageBinding;
 
 import com.omerbicakcioglu.bilkeats.R;
@@ -22,6 +25,10 @@ import com.omerbicakcioglu.bilkeats.main.MainActivity;
 public class SignUpPage extends AppCompatActivity {
     private ActivitySignUpPageBinding binding;
     private FirebaseAuth auth;
+    private FirebaseStorage firebaseStorage;
+    private FirebaseFirestore firebaseFirestore;
+    private StorageReference storageReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +37,9 @@ public class SignUpPage extends AppCompatActivity {
         setContentView(view);
 
         auth = FirebaseAuth.getInstance();
+        firebaseFirestore = FirebaseFirestore.getInstance();
+        firebaseStorage = FirebaseStorage.getInstance();
+        storageReference = firebaseStorage.getReference();
 
 
     }
@@ -45,6 +55,7 @@ public class SignUpPage extends AppCompatActivity {
                     Intent intent = new Intent(SignUpPage.this, MainActivity.class);
                     startActivity(intent);
                     finish();
+                    storageReference.child("Users/" + emailText);
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
