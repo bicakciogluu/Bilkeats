@@ -6,50 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".lpd.DeclareActivity">
 
+    <View
+        android:id="@+id/redRect"
+        android:layout_width="443dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="33dp"
+        android:background="#D12C2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/bilkeatslogo" />
+
     <ImageView
         android:id="@+id/declareImageView"
         android:layout_width="202dp"
         android:layout_height="157dp"
-        android:layout_marginTop="75dp"
+        android:contentDescription="@string/first_fragment_label"
         android:onClick="declareImageClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:layout_constraintVertical_bias="0.191"
+
+        app:srcCompat="@drawable/baseline_image_24" />
 
     <EditText
         android:id="@+id/descriptionEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="Description"
         android:inputType="textPersonName"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/declareImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/declareImageView"
+        app:layout_constraintVertical_bias="0.011" />
 
     <Button
         android:id="@+id/declareButton"
-        android:layout_width="150dp"
-        android:layout_height="47dp"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
         android:layout_marginTop="25dp"
+        android:backgroundTint="#194C91"
         android:onClick="declareButtonClicked"
         android:text="Declare"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+        app:layout_constraintTop_toBottomOf="@+id/dateText"
+        app:layout_constraintVertical_bias="0.101" />
 
-    <TextView
+    <EditText
         android:id="@+id/dateText"
-        android:layout_width="207dp"
-        android:layout_height="50dp"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
         android:layout_marginTop="50dp"
         android:hint="Select Date"
         android:onClick="dateTextClicked"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picture Of Image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redRect"
+        app:layout_constraintVertical_bias="0.284" />
 </androidx.constraintlayout.widget.ConstraintLayout>
