@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".login_signup.Preferences">
 
+    <Switch
+        android:id="@+id/lactose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:onClick="lactose"
+        android:text="lactose"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Switch
+        android:id="@+id/nutAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nut,Allergy"
+        android:text="Nut Allergy"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Switch
+        android:id="@+id/vegan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="vegan"
+        android:text="vegan"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="126dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
