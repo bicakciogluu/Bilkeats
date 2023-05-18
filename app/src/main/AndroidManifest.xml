@@ -14,10 +14,14 @@
         android:theme="@style/Theme.BilkEats"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".calorie_"
             android:exported="false" />
         <activity
             android:name=".Calorie_"
+=======
+            android:name=".Preferences"
+>>>>>>> master
             android:exported="false" />
         <activity
             android:name=".lpd.ItemDetails"
