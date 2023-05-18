@@ -10,27 +10,44 @@
         android:id="@+id/lactose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="27dp"
         android:checked="false"
         android:onClick="lactose"
         android:text="lactose"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="72dp" />
+        app:layout_constraintBottom_toTopOf="@+id/veganSwitch"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/nutAllergy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:onClick="nut,Allergy"
         android:text="Nut Allergy"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintEnd_toEndOf="@+id/veganSwitch"
+        app:layout_constraintStart_toEndOf="@+id/veganSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/veganSwitch" />
 
     <Switch
-        android:id="@+id/vegan"
+        android:id="@+id/veganSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
         android:onClick="vegan"
         android:text="vegan"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintEnd_toStartOf="@+id/lactose"
+        app:layout_constraintStart_toStartOf="@+id/lactose"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:onClick="ok"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutAllergy" />
 </androidx.constraintlayout.widget.ConstraintLayout>
