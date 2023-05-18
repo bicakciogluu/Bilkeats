@@ -44,8 +44,8 @@
 
     <TextView
         android:id="@+id/descriptionTextView"
-        android:layout_width="271dp"
-        android:layout_height="52dp"
+        android:layout_width="207dp"
+        android:layout_height="40dp"
         android:layout_marginTop="76dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,8 +54,8 @@
 
     <TextView
         android:id="@+id/dateTextView"
-        android:layout_width="271dp"
-        android:layout_height="52dp"
+        android:layout_width="207dp"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
