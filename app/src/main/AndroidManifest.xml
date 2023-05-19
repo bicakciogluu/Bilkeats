@@ -42,9 +42,6 @@
             android:name=".pianopage.PianoPage"
             android:exported="false" />
         <activity
-            android:name=".ProfilingUser"
-            android:exported="false" />
-        <activity
             android:name=".login_signup.LoginPage"
             android:exported="false" />
         <activity
