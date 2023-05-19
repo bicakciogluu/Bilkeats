@@ -7,7 +7,9 @@ import android.os.Bundle;
 import com.omerbicakcioglu.bilkeats.R;
 
 public class FoodPreferences extends AppCompatActivity {
-    String[] foodPreferenceList={"meatSoup", "vegetableSoup" ,"yogurtSoup" ,"legumeSoup", "chickenBased", "legumeBased", "redMeatBased","fishBased", "vegetableBased", "rice", "pasta", "noodle","salad", "chocolateDessert","syrupDessert", "milkDessert", "pastry", "yogurt", "pickles", "fruits"};
+    String[] foodPreferenceList={"meatSoup", "vegetableSoup" ,"yogurtSoup" ,"legumeSoup", "chickenBased", "legumeBased", "redMeatBased","fishBased",
+            "vegetableBased", "rice", "pasta", "noodle","salad", "chocolateDessert","syrupDessert",
+            "milkDessert", "pastry", "yogurt", "pickles", "fruits"};
     int[] foodPreferencePoints= new int[20];
 
 
