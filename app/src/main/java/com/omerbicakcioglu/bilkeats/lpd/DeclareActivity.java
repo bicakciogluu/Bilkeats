@@ -69,6 +69,7 @@ public class DeclareActivity extends AppCompatActivity {
 
         registerLauncher();
 
+
     }
 
   public void declareButtonClicked(View view){
