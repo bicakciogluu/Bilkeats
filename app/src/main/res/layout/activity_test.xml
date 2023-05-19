@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circularProgressIndicator"
 
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintVertical_bias="0.813" />
 
     <View
         android:id="@+id/view3"
@@ -232,8 +232,10 @@
         android:layout_height="35dp"
         android:layout_marginEnd="166dp"
         android:layout_marginBottom="116dp"
+        android:hint="...Carb"
         android:text="Calories From Outside"
         android:textColor="@color/white"
+        android:textColorHint="#F3F0F0"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -264,9 +266,10 @@
         android:id="@+id/outProt"
         android:layout_width="105dp"
         android:layout_height="48dp"
-        android:text="...Prot"
+        android:hint="...Prot"
         android:textAlignment="textStart"
         android:textColor="@color/white"
+        android:textColorHint="#F8F4F4"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/outCarb"
@@ -297,17 +300,18 @@
         android:id="@+id/outFat"
         android:layout_width="105dp"
         android:layout_height="48dp"
-        android:text="...Fat"
+        android:hint="...Fat"
         android:textAlignment="textStart"
         android:textColor="@color/white"
+        android:textColorHint="#FDFDFD"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="@+id/view4"
-        app:layout_constraintHorizontal_bias="0.822"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/outCarb"
         app:layout_constraintTop_toBottomOf="@+id/outCarb"
-        app:layout_constraintVertical_bias="0.625"
+        app:layout_constraintVertical_bias="0.793"
         tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

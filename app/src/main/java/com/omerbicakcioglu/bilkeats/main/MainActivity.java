@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.omerbicakcioglu.bilkeats.TestActivity;
-import com.omerbicakcioglu.bilkeats.calorietracking.CalorieTracking;
 import com.omerbicakcioglu.bilkeats.databinding.ActivityMainBinding;
 import com.omerbicakcioglu.bilkeats.lpd.LpdActivity;
 
