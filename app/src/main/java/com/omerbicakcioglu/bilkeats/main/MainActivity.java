@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.omerbicakcioglu.bilkeats.R;
+import com.omerbicakcioglu.bilkeats.TestActivity;
+import com.omerbicakcioglu.bilkeats.calorietracking.CalorieTracking;
 import com.omerbicakcioglu.bilkeats.databinding.ActivityMainBinding;
 import com.omerbicakcioglu.bilkeats.lpd.LpdActivity;
 
@@ -29,5 +29,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, LpdActivity.class));
     }
 
+    public void calorie(View vies){
+        startActivity(new Intent(this, TestActivity.class));
+    }
 
 }

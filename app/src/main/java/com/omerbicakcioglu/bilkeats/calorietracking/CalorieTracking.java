@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.omerbicakcioglu.bilkeats.R;
 
-public class calorie_ extends AppCompatActivity {
+public class CalorieTracking extends AppCompatActivity {
     public int carbonCalorie;
     public int proteinCalorie;
     public int fatCalorie;

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calorietracking.CalorieTracking">
-
+    tools:context=".TestActivity">
 
     <View
         android:id="@+id/view4"
@@ -310,6 +309,5 @@
         app:layout_constraintTop_toBottomOf="@+id/outCarb"
         app:layout_constraintVertical_bias="0.625"
         tools:ignore="TextSizeCheck" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
