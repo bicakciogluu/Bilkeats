@@ -32,10 +32,10 @@
             android:name=".login_signup.LoginPage"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".login_signup.SignUpPage"
             android:exported="false" />
         <activity
-            android:name=".login_signup.SignUpPage"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
