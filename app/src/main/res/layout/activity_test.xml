@@ -131,7 +131,7 @@
         app:trackThickness="12dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/sumCalorie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:shadowColor="#194C90"
@@ -146,7 +146,7 @@
         app:layout_constraintVertical_bias="0.426" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/shouldSome"
         android:layout_width="79dp"
         android:layout_height="17dp"
         android:layout_marginTop="9dp"
@@ -158,7 +158,7 @@
         app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/sumCalorie"
         app:layout_constraintVertical_bias="0.0" />
 
     <View
@@ -267,6 +267,7 @@
         android:layout_width="105dp"
         android:layout_height="48dp"
         android:hint="...Prot"
+        android:inputType="number"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textColorHint="#F8F4F4"
@@ -285,9 +286,11 @@
         android:layout_width="105dp"
         android:layout_height="48dp"
         android:layout_marginStart="64dp"
-        android:text="...Carb"
+        android:hint="...Carb"
+        android:inputType="number"
         android:textAlignment="textStart"
         android:textColor="@color/white"
+        android:textColorHint="#E8E3E3"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -303,6 +306,7 @@
         android:hint="...Fat"
         android:textAlignment="textStart"
         android:textColor="@color/white"
+        android:inputType="number"
         android:textColorHint="#FDFDFD"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -313,6 +317,8 @@
         app:layout_constraintTop_toBottomOf="@+id/outCarb"
         app:layout_constraintVertical_bias="0.793"
         tools:ignore="TextSizeCheck" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
