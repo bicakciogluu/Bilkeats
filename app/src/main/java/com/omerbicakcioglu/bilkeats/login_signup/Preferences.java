@@ -47,7 +47,9 @@ public class Preferences extends AppCompatActivity {
 
     }
 
-    public void okButtonClicked() {
+    // These method gives an error (can not find the veganswitch):
+
+   /* public void okButtonClicked() {
         String stringPath = "Users/Allergens/" + auth.getCurrentUser().getEmail();
 
 
@@ -84,5 +86,5 @@ public class Preferences extends AppCompatActivity {
                 });
             }
         });
-    }
+    }*/
 }

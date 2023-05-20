@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -19,9 +17,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.omerbicakcioglu.bilkeats.databinding.ActivitySignUpPageBinding;
 
-import com.omerbicakcioglu.bilkeats.R;
-import com.omerbicakcioglu.bilkeats.main.MainActivity;
-import com.omerbicakcioglu.bilkeats.profiling_user.ProfilingUser;
+import com.omerbicakcioglu.bilkeats.login_signup.profiling_user.ProfilingUser;
 
 public class SignUpPage extends AppCompatActivity {
     private ActivitySignUpPageBinding binding;

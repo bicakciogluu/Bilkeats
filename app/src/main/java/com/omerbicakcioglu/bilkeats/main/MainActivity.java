@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-
-
 import com.google.android.material.navigation.NavigationBarView;
 import com.omerbicakcioglu.bilkeats.R;
 import com.omerbicakcioglu.bilkeats.calorietracking.CalorieTrackingActivity;

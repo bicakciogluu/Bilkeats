@@ -12,8 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.omerbicakcioglu.bilkeats.profiling_user.R;
-import com.omerbicakcioglu.bilkeats.profiling_user.databinding.FragmentProfilingUserBinding;
+import com.omerbicakcioglu.bilkeats.databinding.FragmentProfilingUserBinding;
+
+
 
 /**
  * A placeholder fragment containing a simple view.
@@ -44,8 +45,8 @@ public class PlaceholderFragment extends Fragment {
         pageViewModel.setIndex(index);
     }
 
-    @Override
-    public View onCreateView(
+  //  @Override
+   /* public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 
@@ -66,5 +67,5 @@ public class PlaceholderFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
-    }
+    }*/
 }
