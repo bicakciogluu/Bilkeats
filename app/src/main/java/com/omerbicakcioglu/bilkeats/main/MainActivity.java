@@ -7,9 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+
 import com.google.android.material.navigation.NavigationBarView;
 import com.omerbicakcioglu.bilkeats.R;
 import com.omerbicakcioglu.bilkeats.calorietracking.CalorieTrackingActivity;
@@ -20,8 +20,6 @@ import com.omerbicakcioglu.bilkeats.settings.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
- BottomNavigationView nav;
-
     private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +28,7 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-
-        nav = findViewById(R.id.nav);
-
-        nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        binding.nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -56,9 +51,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
-
-
-
                 return true;
             }
         });
