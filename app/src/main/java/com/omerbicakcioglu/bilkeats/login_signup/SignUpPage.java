@@ -21,6 +21,7 @@ import com.omerbicakcioglu.bilkeats.databinding.ActivitySignUpPageBinding;
 
 import com.omerbicakcioglu.bilkeats.R;
 import com.omerbicakcioglu.bilkeats.main.MainActivity;
+import com.omerbicakcioglu.bilkeats.profiling_user.ProfilingUser;
 
 public class SignUpPage extends AppCompatActivity {
     private ActivitySignUpPageBinding binding;
@@ -52,7 +53,7 @@ public class SignUpPage extends AppCompatActivity {
             auth.createUserWithEmailAndPassword(emailText,passwordText).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
                 public void onSuccess(AuthResult authResult) {
-                    Intent intent = new Intent(SignUpPage.this, MainActivity.class);
+                    Intent intent = new Intent(SignUpPage.this, ProfilingUser.class);
                     startActivity(intent);
                     finish();
                     storageReference.child("Users/" + emailText);

@@ -14,23 +14,31 @@
         android:theme="@style/Theme.BilkEats"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".settings.SettingsActivity"
             android:exported="false" />
         <activity
             android:name=".LunchDinner"
+=======
+            android:name=".MainMenu.LunchDinner"
+>>>>>>> Stashed changes
             android:exported="false"
             android:label="@string/title_activity_lunch_dinner"
             android:theme="@style/Theme.BilkEats.NoActionBar" />
         <activity
-            android:name=".ProfilingUser"
-            android:exported="false"
+            android:name=".main.MainActivity"
+            android:exported="true"
             android:label="@string/title_activity_profiling_user"
             android:theme="@style/Theme.BilkEats.NoActionBar" />
         <activity
+<<<<<<< Updated upstream
             android:name=".login_signup.Preferences"
             android:exported="false" />
         <activity
             android:name=".TestActivity"
+=======
+            android:name=".calorietracking.CalorieTrackingActivity"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".lpd.ItemDetails"
@@ -51,7 +59,7 @@
             android:name=".login_signup.SignUpPage"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".profiling_user.ProfilingUser"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
