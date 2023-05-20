@@ -33,7 +33,6 @@ public class Preferences extends AppCompatActivity {
     private ActivityPreferencesBinding binding;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,23 +45,22 @@ public class Preferences extends AppCompatActivity {
         storageReference = firebaseStorage.getReference();
 
 
-
-
     }
-    public void okButtonClicked(){
-        String stringPath = "Users/Allergens/" +auth.getCurrentUser().getEmail();
+
+    public void okButtonClicked() {
+        String stringPath = "Users/Allergens/" + auth.getCurrentUser().getEmail();
 
 
         Switch veganSwitch = (Switch) findViewById(binding.veganSwitch.getId());
-        if(veganSwitch.isChecked()){
+        if (veganSwitch.isChecked()) {
             isVegan = true;
         }
-        Switch lactose = (Switch) findViewById(binding.lactose.getId());
-        if(lactose.isChecked()){
+        Switch lactose = (Switch) findViewById(binding.lactoseSwitch.getId());
+        if (lactose.isChecked()) {
             isLactoseIntolerant = true;
         }
-        Switch nutAllergy = (Switch) findViewById(binding.nutAllergy.getId());
-        if(nutAllergy.isChecked()){
+        Switch nutAllergy = (Switch) findViewById(binding.nutSwitch.getId());
+        if (nutAllergy.isChecked()) {
             isNutAllergic = true;
         }
         firebaseStorage.getReference(stringPath).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -76,7 +74,6 @@ public class Preferences extends AppCompatActivity {
 
 
                 firebaseFirestore.collection("Users").add(userFoodData).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Intent intentToLpdActivity = new Intent(Preferences.this, LpdActivity.class);
                         intentToLpdActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -84,20 +81,8 @@ public class Preferences extends AppCompatActivity {
                     }
 
 
-
-
-
-
-    public boolean getVegan(){
-        return isVegan;
+                });
+            }
+        });
     }
-    public boolean getLactose(){
-        return isLactoseIntolerant;
-    }
-    public boolean getNut(){
-        return isNutAllergic;
-    }
-
-
-
 }

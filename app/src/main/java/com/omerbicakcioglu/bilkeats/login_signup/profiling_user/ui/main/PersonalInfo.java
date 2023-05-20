@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.profiling_user.ui.main;
+package com.omerbicakcioglu.bilkeats.login_signup.profiling_user.ui.main;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.omerbicakcioglu.bilkeats.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FoodPref#newInstance} factory method to
+ * Use the {@link PersonalInfo#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FoodPref extends Fragment {
+public class PersonalInfo extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class FoodPref extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FoodPref() {
+    public PersonalInfo() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class FoodPref extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FoodPref.
+     * @return A new instance of fragment PersonalInfo.
      */
     // TODO: Rename and change types and number of parameters
-    public static FoodPref newInstance(String param1, String param2) {
-        FoodPref fragment = new FoodPref();
+    public static PersonalInfo newInstance(String param1, String param2) {
+        PersonalInfo fragment = new PersonalInfo();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class FoodPref extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_food_pref, container, false);
+        return inflater.inflate(R.layout.fragment_personal_info, container, false);
     }
 }

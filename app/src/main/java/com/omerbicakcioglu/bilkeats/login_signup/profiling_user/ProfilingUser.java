@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.profiling_user;
+package com.omerbicakcioglu.bilkeats.login_signup.profiling_user;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.omerbicakcioglu.bilkeats.databinding.ActivityProfilingUserBinding;
-import com.omerbicakcioglu.bilkeats.profiling_user.ui.main.SectionsPagerAdapter;
+import com.omerbicakcioglu.bilkeats.login_signup.profiling_user.ui.main.SectionsPagerAdapter;
 
 public class ProfilingUser extends AppCompatActivity {
 
