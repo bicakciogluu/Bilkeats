@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profiling_user.ui.main.Allergens">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allergens"
+        android:textAlignment="center"
+        android:textColor="#194C91"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="566dp"
+        android:layout_marginBottom="140dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nut Product"
+            tools:layout_editor_absoluteX="288dp"
+            tools:layout_editor_absoluteY="210dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nut Product"
+            tools:layout_editor_absoluteX="288dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
