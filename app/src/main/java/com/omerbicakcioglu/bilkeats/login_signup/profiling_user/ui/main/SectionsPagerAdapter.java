@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.profiling_user.ui.main;
+package com.omerbicakcioglu.bilkeats.login_signup.profiling_user.ui.main;
 
 import android.content.Context;
 

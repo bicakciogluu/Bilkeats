@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.profiling_user.ui.main;
+package com.omerbicakcioglu.bilkeats.login_signup.profiling_user.ui.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;

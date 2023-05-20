@@ -12,9 +12,11 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.omerbicakcioglu.bilkeats.R;
-import com.omerbicakcioglu.bilkeats.TestActivity;
+import com.omerbicakcioglu.bilkeats.calorietracking.CalorieTrackingActivity;
 import com.omerbicakcioglu.bilkeats.databinding.ActivityMainBinding;
 import com.omerbicakcioglu.bilkeats.lpd.LpdActivity;
+import com.omerbicakcioglu.bilkeats.pianopage.PianoPage;
+import com.omerbicakcioglu.bilkeats.settings.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,19 +40,19 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
 
                     case R.id.home:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_LONG).show();
+                        // Already in main
                         break;
 
                     case R.id.calorieTrack:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(MainActivity.this, CalorieTrackingActivity.class));
                         break;
 
                     case R.id.settings:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(MainActivity.this, SettingsActivity.class ));
                         break;
 
                     case R.id.piano:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(MainActivity.this, PianoPage.class));
                         break;
 
                 }
@@ -63,13 +65,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // Temporary
-    public void lpdButtonClicked(View view ) {
-        startActivity(new Intent(this, LpdActivity.class));
-    }
 
-    public void calorie(View vies){
-        startActivity(new Intent(this, TestActivity.class));
-    }
+
+
 
 }

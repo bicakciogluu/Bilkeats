@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profiling_user.ui.main.Allergens">
+    tools:context=".login_signup.profiling_user.ui.main.Allergens">
 
     <TextView
         android:layout_width="match_parent"
@@ -31,28 +31,31 @@
         >
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/veganSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:onClick="veganSwitch"
             android:text="Nut Product"
             tools:layout_editor_absoluteX="288dp"
-            tools:layout_editor_absoluteY="210dp"
-            android:layout_marginBottom="30dp"/>
+            tools:layout_editor_absoluteY="210dp" />
 
         <Switch
-            android:id="@+id/switch2"
-            android:layout_marginBottom="40dp"
+            android:id="@+id/lactoseSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:onClick="lactoseSwitch"
             android:text="Nut Product"
             tools:layout_editor_absoluteX="288dp"
             tools:layout_editor_absoluteY="210dp" />
 
 
         <Switch
-            android:id="@+id/switch3"
+            android:id="@+id/nutSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="nutSwitch"
             android:text="Switch" />
     </LinearLayout>
 
