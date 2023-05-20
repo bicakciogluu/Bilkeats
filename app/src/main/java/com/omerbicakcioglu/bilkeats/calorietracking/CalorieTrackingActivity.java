@@ -1,15 +1,13 @@
-package com.omerbicakcioglu.bilkeats;
+package com.omerbicakcioglu.bilkeats.calorietracking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import com.omerbicakcioglu.bilkeats.databinding.ActivityTestBinding;
+import com.omerbicakcioglu.bilkeats.databinding.ActivityCalorieTrackingBinding;
 
-public class TestActivity extends AppCompatActivity {
+public class CalorieTrackingActivity extends AppCompatActivity {
     public int takeCarbon;
     public int takeProtein;
     public int takeFat;
@@ -20,12 +18,12 @@ public class TestActivity extends AppCompatActivity {
     public int carbonCalorieRemain;
 
 
-    ActivityTestBinding binding;
+    ActivityCalorieTrackingBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityTestBinding.inflate(getLayoutInflater());
+        binding = ActivityCalorieTrackingBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
         proteinCalorieRemain = 800;
