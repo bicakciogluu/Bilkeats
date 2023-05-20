@@ -37,6 +37,7 @@ public class TestActivity extends AppCompatActivity {
         binding.remainProt.setText("" + proteinCalorieRemain);
         binding.remainFat.setText("" + fatCalorieRemain);
         binding.sumCalorie.setText("" + 0);
+        binding.circularProgressIndicator.setProgress(0);
 
 
     }
@@ -53,6 +54,7 @@ public class TestActivity extends AppCompatActivity {
         sum = Integer.parseInt(binding.sumCalorie.getText().toString());
         sum = sum + takeFat + takeCarbon + takeProtein;
         binding.sumCalorie.setText("" + sum);
+        binding.circularProgressIndicator.setProgress(100*sum/shouldSumCalorie);
 
     }
 }
