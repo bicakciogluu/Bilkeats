@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     android:layout_height="match_parent"
     tools:context=".calorietracking.CalorieTrackingActivity">
 
@@ -304,9 +305,9 @@
         android:layout_width="105dp"
         android:layout_height="48dp"
         android:hint="...Fat"
+        android:inputType="number"
         android:textAlignment="textStart"
         android:textColor="@color/white"
-        android:inputType="number"
         android:textColorHint="#FDFDFD"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -315,10 +316,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/outCarb"
         app:layout_constraintTop_toBottomOf="@+id/outCarb"
-        app:layout_constraintVertical_bias="0.793"
+        app:layout_constraintVertical_bias="0.379"
         tools:ignore="TextSizeCheck" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
