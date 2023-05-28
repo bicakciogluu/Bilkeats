@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.omerbicakcioglu.bilkeats.pianopage.ClassicalMusic1"
+            android:exported="false"
+
+            />
+    </application>
+</manifest>
