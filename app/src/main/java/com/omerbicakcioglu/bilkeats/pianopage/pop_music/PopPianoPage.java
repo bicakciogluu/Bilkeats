@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.omerbicakcioglu.bilkeats.R;
+import com.omerbicakcioglu.bilkeats.pianopage.classical_music.ClassicalPianoPage;
 import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic1;
 import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic2;
 import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic3;
 import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic4;
 import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic5;
+import com.omerbicakcioglu.bilkeats.pianopage.rock_music.RockPianoPage;
 
 public class PopPianoPage extends AppCompatActivity {
 
@@ -43,6 +45,16 @@ public class PopPianoPage extends AppCompatActivity {
 
     public void popMusic5(View view){
         Intent intent = new Intent(this, PopMusic5.class);
+        startActivity(intent);
+    }
+
+    public void goToClassic(View view){
+        Intent intent = new Intent(this, ClassicalPianoPage.class);
+        startActivity(intent);
+    }
+
+    public void goToRock(View view){
+        Intent intent = new Intent(this, RockPianoPage.class);
         startActivity(intent);
     }
 }
