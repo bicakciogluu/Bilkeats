@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PopMusic1 extends AppCompatActivity {
+import com.omerbicakcioglu.bilkeats.R;
+
+public class RockMusic5 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pop_music1);
+        setContentView(R.layout.activity_rock_music5);
     }
 }

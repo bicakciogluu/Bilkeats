@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.omerbicakcioglu.bilkeats.R;
 
-public class PianoPage extends AppCompatActivity {
+public class RockMusic3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_piano_page);
+        setContentView(R.layout.activity_rock_music3);
     }
 }
