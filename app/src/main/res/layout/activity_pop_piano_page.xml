@@ -4,6 +4,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pianopage.pop_music.PopPianoPage">
+    tools:context=".pianopage.classical_music.ClassicalPianoPage">
+
+    <ImageView
+        android:onClick="goToClassic"
+        android:id="@+id/backgroundRonesans"
+        android:layout_width="478dp"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#B3F1E0E0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/disco" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        android:alpha="0.8"
+        android:textSize="60px"
+        android:background="@drawable/forbutton"
+        android:bufferType="normal"
+        android:fontFamily="@font/disco"
+        android:onClick="classicalMusic1"
+        android:text="Moonlight Sonata"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilkeatsLogo"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        android:alpha="0.8"
+        android:background="@drawable/forbutton"
+        android:bufferType="normal"
+        android:fontFamily="@font/disco"
+        android:onClick="classicalMusic2"
+        android:text="G Minor"
+        android:textAllCaps="false"
+        android:textSize="60px"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilkeatsLogo"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <ImageView
+        android:id="@+id/bilkeatsLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bilkeatslogo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        android:alpha="0.8"
+        android:background="@drawable/forbutton"
+        android:bufferType="normal"
+        android:onClick="classicalMusic4"
+        android:text="Nocturne"
+        android:textSize="60px"
+        android:textAllCaps="false"
+        android:fontFamily="@font/disco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilkeatsLogo"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        android:alpha="0.8"
+        android:background="@drawable/forbutton"
+        android:bufferType="normal"
+        android:onClick="classicalMusic5"
+        android:text="Spring Waltz"
+        android:textSize="60px"
+        android:fontFamily="@font/disco"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilkeatsLogo"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        android:alpha="0.8"
+        android:textSize="60px"
+        android:background="@drawable/forbutton"
+        android:bufferType="normal"
+        android:onClick="classicalMusic3"
+        android:text="Valse"
+        android:fontFamily="@font/disco"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilkeatsLogo"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <ImageButton
+        android:onClick="goToClassic"
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toEndOf="@+id/bilkeatsLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+    <ImageButton
+        android:onClick="goToRock"
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/bilkeatsLogo"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundRonesans"
+        app:layout_constraintVertical_bias="0.307"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

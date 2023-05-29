@@ -5,5 +5,16 @@
         android:fontWeight="400"
         android:font="@font/raleway_italic"
        />
+
+    <font
+        android:fontStyle="normal"
+        android:font="@font/disco"
+        android:fontWeight="400"
+        />
+
+    <font
+        android:font="@font/metalic"
+        android:fontWeight="400"
+        android:fontStyle="normal"/>
 </font-family>
 
