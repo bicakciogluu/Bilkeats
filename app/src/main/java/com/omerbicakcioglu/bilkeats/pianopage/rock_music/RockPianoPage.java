@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.pianopage;
+package com.omerbicakcioglu.bilkeats.pianopage.rock_music;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.omerbicakcioglu.bilkeats.R;
+import com.omerbicakcioglu.bilkeats.pianopage.rock_music.RockMusic1;
+import com.omerbicakcioglu.bilkeats.pianopage.rock_music.RockMusic2;
+import com.omerbicakcioglu.bilkeats.pianopage.rock_music.RockMusic3;
+import com.omerbicakcioglu.bilkeats.pianopage.rock_music.RockMusic4;
+import com.omerbicakcioglu.bilkeats.pianopage.rock_music.RockMusic5;
 
 public class RockPianoPage extends AppCompatActivity {
 

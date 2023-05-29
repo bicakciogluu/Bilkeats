@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.pianopage;
+package com.omerbicakcioglu.bilkeats.pianopage.classical_music;
 
 import androidx.appcompat.app.AppCompatActivity;
 

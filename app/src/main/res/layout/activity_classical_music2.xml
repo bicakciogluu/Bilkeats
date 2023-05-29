@@ -4,6 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pianopage.ClassicalMusic2">
+    android:onClick="backButton"
+    tools:context=".pianopage.classical_music.ClassicalMusic2">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/g_minor"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/backButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backButton"
+        android:text="<-"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="40dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

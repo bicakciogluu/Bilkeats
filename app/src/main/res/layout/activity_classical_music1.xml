@@ -2,8 +2,26 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moonlightSonata"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pianopage.ClassicalMusic1">
+    tools:context=".pianopage.classical_music.ClassicalMusic1">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/moonlight_sonata"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/backButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backButton"
+        android:text="<-"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="31dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

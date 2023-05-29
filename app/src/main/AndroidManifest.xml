@@ -1,10 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
         <activity
-            android:name="com.omerbicakcioglu.bilkeats.pianopage.ClassicalMusic1"
-            android:exported="false"
-
-            />
+            android:name=".RockMusic5"
+            android:exported="false" />
+        <activity
+            android:name=".RockMusic4"
+            android:exported="false" />
+        <activity
+            android:name=".RockMusic3"
+            android:exported="false" />
+        <activity
+            android:name=".RockMusic2"
+            android:exported="false" />
+        <activity
+            android:name=".RockMusic1"
+            android:exported="false" />
+        <activity
+            android:name=".PopMusic5"
+            android:exported="false" />
+        <activity
+            android:name=".PopMusic4"
+            android:exported="false" />
+        <activity
+            android:name=".PopMusic3"
+            android:exported="false" />
+        <activity
+            android:name=".PopMusic2"
+            android:exported="false" />
+        <activity
+            android:name=".PopMusic1"
+            android:exported="false" />
+        <activity
+            android:name=".RockPianoPage"
+            android:exported="false" />
+        <activity
+            android:name=".PopPianoPage"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicalMusic5"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicalMusic4"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicalMusic3"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicalMusic2"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicalMusic1"
+            android:exported="false" />
     </application>
+
 </manifest>

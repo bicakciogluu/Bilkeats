@@ -1,4 +1,4 @@
-package com.omerbicakcioglu.bilkeats.pianopage;
+package com.omerbicakcioglu.bilkeats.pianopage.pop_music;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.omerbicakcioglu.bilkeats.R;
+import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic1;
+import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic2;
+import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic3;
+import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic4;
+import com.omerbicakcioglu.bilkeats.pianopage.pop_music.PopMusic5;
 
 public class PopPianoPage extends AppCompatActivity {
 
