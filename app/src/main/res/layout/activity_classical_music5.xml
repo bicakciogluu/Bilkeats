@@ -14,13 +14,4 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <Button
-        android:id="@+id/backButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="backButton"
-        android:text="<-"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="40dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
