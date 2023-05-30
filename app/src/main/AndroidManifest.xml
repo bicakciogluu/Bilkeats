@@ -3,6 +3,18 @@
 
     <application>
         <activity
+            android:name=".contactUs"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeNickname"
+            android:exported="false" />
+        <activity
+            android:name=".SettingPage"
+            android:exported="false" />
+        <activity
             android:name=".RockMusic5"
             android:exported="false" />
         <activity

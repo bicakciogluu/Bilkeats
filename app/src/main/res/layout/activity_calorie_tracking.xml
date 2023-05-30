@@ -232,7 +232,7 @@
         android:layout_width="202dp"
         android:layout_height="35dp"
         android:layout_marginEnd="166dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="96dp"
         android:hint="...Carb"
         android:text="Calories From Outside"
         android:textColor="@color/white"
@@ -243,8 +243,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view4"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintTop_toBottomOf="@+id/outsideAdd"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/outsideAdd"
@@ -316,7 +316,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/outCarb"
         app:layout_constraintTop_toBottomOf="@+id/outCarb"
-        app:layout_constraintVertical_bias="0.379"
+        app:layout_constraintVertical_bias="0.578"
         tools:ignore="TextSizeCheck" />
 
 

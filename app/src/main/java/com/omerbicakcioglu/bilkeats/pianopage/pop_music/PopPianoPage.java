@@ -47,6 +47,7 @@ public class PopPianoPage extends AppCompatActivity {
         Intent intent = new Intent(this, PopMusic5.class);
         startActivity(intent);
     }
+<<<<<<< Updated upstream
 
     public void goToClassic(View view){
         Intent intent = new Intent(this, ClassicalPianoPage.class);
@@ -56,5 +57,10 @@ public class PopPianoPage extends AppCompatActivity {
     public void goToRock(View view){
         Intent intent = new Intent(this, RockPianoPage.class);
         startActivity(intent);
+=======
+    public void goToClassic(View view){
+        startActivity(new Intent(this, ClassicalPianoPage.class));
+        finish();
+>>>>>>> Stashed changes
     }
 }

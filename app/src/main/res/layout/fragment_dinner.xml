@@ -35,9 +35,10 @@
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="163dp"
+                android:fontFamily="@font/raleway_italic"
                 android:layout_height="66dp"
                 android:layout_marginEnd="88dp"
-                android:text="LUNCH"
+                android:text="DINNER"
                 android:textAlignment="viewStart"
                 android:textColor="#194C90"
                 android:textSize="40dp"

@@ -117,34 +117,36 @@
         app:layout_constraintVertical_bias="0.468" />
 
     <ImageButton
-        android:onClick="goToPop"
         android:id="@+id/imageButton3"
         android:layout_width="50dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="#00FFFFFF"
+        android:onClick="goToPop"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toEndOf="@+id/bilkeatsLogo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
-        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+        app:srcCompat="@drawable/baseline_arrow_forward_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:onClick="goToClassic"
         android:id="@+id/imageButton4"
         android:layout_width="50dp"
         android:layout_height="48dp"
         android:layout_marginEnd="644dp"
         android:layout_marginBottom="64dp"
         android:background="#00FFFFFF"
+        android:onClick="goToClassic"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="@+id/backgroundRonesans"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backgroundRonesans"
         app:layout_constraintVertical_bias="0.933"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
